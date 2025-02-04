@@ -1,0 +1,37 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "RealtimeApplication",
+      "request": "launch",
+      "mainClass": "com.yth.realtime.RealtimeApplication",
+      "projectName": "realtime",
+      "args": "",
+      "envFile": "${workspaceFolder}/realtime-citus-backend/.env"
+    },
+    {
+      "type": "java",
+      "name": "Debug Spring Boot",
+      "request": "attach",
+      "hostName": "localhost",
+      "port": 5005,
+      "preLaunchTask": "Gradle bootRun with Debug",
+      "projectName": "realtime",
+      "sourcePaths": ["${workspaceFolder}/realtime-citus-backend/src/main/java"]
+    },
+    {
+      "type": "chrome",
+      "name": "Debug React Frontend",
+      "request": "launch",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}/realtime-citus"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Full Stack Debug",
+      "configurations": ["Debug Spring Boot", "Debug React Frontend"]
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  // Java 설정
+
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "java.compile.nullAnalysis.mode": "automatic",
+  "java.format.settings.url": ".vscode/java-formatter.xml",
+  "java.format.settings.profile": "GoogleStyle",
+
+  // Spring Boot 설정
+  "spring-boot.ls.java.home": "",
+  "spring-boot.ls.java.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx2G -Xms100m",
+
+  // 파일 설정
+  "files.autoSave": "afterDelay",
+  "files.encoding": "utf8",
+  "files.eol": "\n",
+
+  // 편집기 설정
+  "editor.formatOnSave": true,
+  "editor.tabSize": 4,
+  "editor.detectIndentation": true,
+  "editor.rulers": [120],
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  },
+
+  // TypeScript/JavaScript 설정
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+
+  // Git 설정
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+
+  // 터미널 설정
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+
+  // 검색 제외 설정
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/build": true,
+    "**/dist": true,
+    "**/.gradle": true
+  },
+
+  // 파일 제외 설정
+  "files.exclude": {
+    "**/.git": true,
+    "**/.gradle": true,
+    "**/build": true,
+    "**/node_modules": true
+  }
+}

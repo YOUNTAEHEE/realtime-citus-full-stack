@@ -1,0 +1,44 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Gradle bootRun with Debug",
+      "type": "shell",
+      "command": "./gradlew.bat",
+      "args": ["bootRun", "--debug-jvm", "--args='--file.encoding=UTF-8'"],
+      "options": {
+        "cwd": "${workspaceFolder}/realtime-citus-backend"
+      },
+      "group": "build",
+      "problemMatcher": [],
+      "detail": "Debug Spring Boot application"
+    },
+    {
+      "label": "Spring Boot Run (Backend)",
+      "type": "shell",
+      "command": "./gradlew.bat",
+      "args": ["bootRun", "--args='--file.encoding=UTF-8'"],
+      "options": {
+        "cwd": "${workspaceFolder}/realtime-citus-backend"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [],
+      "detail": "Run Spring Boot application using Gradle bootRun"
+    },
+    {
+      "label": "Next.js Dev (Frontend)",
+      "type": "shell",
+      "command": "npm",
+      "args": ["run", "dev"],
+      "options": {
+        "cwd": "${workspaceFolder}/realtime-citus"
+      },
+      "group": "build",
+      "problemMatcher": [],
+      "detail": "Run Next.js development server"
+    }
+  ]
+}
