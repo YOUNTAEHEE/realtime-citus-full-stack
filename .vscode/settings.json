@@ -5,7 +5,8 @@
   "java.compile.nullAnalysis.mode": "automatic",
   "java.format.settings.url": ".vscode/java-formatter.xml",
   "java.format.settings.profile": "GoogleStyle",
-
+  "java.import.gradle.enabled": true, 
+  "java.import.gradle.wrapper.enabled": true, 
   // Spring Boot 설정
   "spring-boot.ls.java.home": "",
   "spring-boot.ls.java.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx2G -Xms100m",
@@ -41,22 +42,19 @@
   "git.autofetch": true,
 
   // 터미널 설정
-  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
 
   // 검색 제외 설정
   "search.exclude": {
     "**/node_modules": true,
     "**/bower_components": true,
-    "**/build": true,
-    "**/dist": true,
     "**/.gradle": true
   },
-
+  "search.useIgnoreFiles": false,
   // 파일 제외 설정
   "files.exclude": {
     "**/.git": true,
     "**/.gradle": true,
-    "**/build": true,
     "**/node_modules": true
   }
 }

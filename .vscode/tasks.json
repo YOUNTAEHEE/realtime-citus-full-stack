@@ -4,7 +4,7 @@
     {
       "label": "Gradle bootRun with Debug",
       "type": "shell",
-      "command": "./gradlew.bat",
+      "command": "gradlew.bat",
       "args": ["bootRun", "--debug-jvm", "--args='--file.encoding=UTF-8'"],
       "options": {
         "cwd": "${workspaceFolder}/realtime-citus-backend"
@@ -16,7 +16,7 @@
     {
       "label": "Spring Boot Run (Backend)",
       "type": "shell",
-      "command": "./gradlew.bat",
+      "command": "gradlew.bat",
       "args": ["bootRun", "--args='--file.encoding=UTF-8'"],
       "options": {
         "cwd": "${workspaceFolder}/realtime-citus-backend"
